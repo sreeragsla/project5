@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Nested if</h1>
+
+        {% if age < 22 %}
+
+        {% if age < 16 %}
+
+        <h1>Go To School</h1>
+
+        {% else %}
+
+        <h1>Go To College</h1>
+
+        {% endif %}
+
+        {% elif age > 22 and age < 57 %}
+
+        {% if age > 22 and age < 45 %}
+
+        <h1>Go To Work And Get Married</h1>
+
+        {% else %}
+
+        <h1>Go To Work , You Will Not Get Married</h1>
+
+        {% endif %}
+
+        {% else %}
+
+        <h1>Rest In Peace...!</h1>
+
+        {% endif %}
+    </center>
+</body>
+</html>
